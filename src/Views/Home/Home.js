@@ -2,6 +2,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import fetchDogs from '../../services/fetchDogs';
 
+import HomeDogCard from '../../components/HomeDogCard/HomeDogCard';
+
 export default function Home() {
   const [dogs, setDogs] = useState([]);
 
@@ -14,5 +16,11 @@ export default function Home() {
   }, []);
   console.log(dogs);
 
-  return <div>this is the home page</div>;
+  return (
+    <>
+      {dogs.map((dog) => (
+        <HomeDogCard key={dog.id} {...dog} />
+      ))}
+    </>
+  );
 }
