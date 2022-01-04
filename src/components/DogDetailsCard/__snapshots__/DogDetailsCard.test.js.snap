@@ -28,7 +28,7 @@ Object {
           loves evveryone
         </p>
         <a
-          href="/home"
+          href="/"
         >
           back to all the Doggos
         </a>
@@ -59,7 +59,7 @@ Object {
         loves evveryone
       </p>
       <a
-        href="/home"
+        href="/"
       >
         back to all the Doggos
       </a>

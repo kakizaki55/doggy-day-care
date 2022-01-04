@@ -11,7 +11,7 @@ export default function DogDetailsCard({ name, age, breed, image, bio }) {
         {name} is a(n) {age} year old {breed}{' '}
       </p>
       <p>{bio}</p>
-      <Link to="/home">back to all the Doggos</Link>
+      <Link to="/">back to all the Doggos</Link>
     </div>
   );
 }
