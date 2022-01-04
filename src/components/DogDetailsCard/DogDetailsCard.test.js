@@ -1,6 +1,6 @@
 import DogDetailsCard from './DogDetailsCard';
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter } from 'react-router-dom';
 
 test('making sure the dog deatils card is reding correctly', async () => {
   const container = await render(
