@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { fetchDogs } from '../../services/fetchDogs';
 import HomeDogCard from '../../components/HomeDogCard/HomeDogCard';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 export default function Home() {
