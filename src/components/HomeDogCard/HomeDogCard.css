@@ -1,6 +1,7 @@
 img {
   width: 10rem;
   height: 8rem;
+  border-radius: 20%;
 }
 .dog-card {
   display: flex;
@@ -11,4 +12,5 @@ img {
   border: burlywood solid 5px;
   padding: 1rem;
   width: 500px;
+  border-radius: 50px;
 }

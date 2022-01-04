@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <header>
-        <NavLink to="/home" className="link">
-          home
+        <NavLink to="" className="link">
+          Home
         </NavLink>
       </header>
       <Switch>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/dog/:id" component={DogDetails}></Route>
       </Switch>
     </>
