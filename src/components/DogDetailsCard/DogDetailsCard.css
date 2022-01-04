@@ -1,8 +1,4 @@
-img {
-  width: 10rem;
-  height: 8rem;
-}
-.dog-card {
+.dog-details-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,5 +6,4 @@ img {
   margin: 1rem;
   border: burlywood solid 5px;
   padding: 1rem;
-  width: 500px;
 }
