@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter } from 'react-router-dom';
 
 import HomeDogCard from './HomeDogCard';
 test('making sure the home dog card renders correctly', async () => {
