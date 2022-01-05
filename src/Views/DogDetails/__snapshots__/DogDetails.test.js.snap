@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`span shot test for the home View container 1`] = `
+<div>
+  <div
+    class="dog-details-card"
+  >
+    <h1>
+       Meet 
+      Happy
+       ! 
+    </h1>
+    <img
+      src="https://placedog.net/500?id=21"
+    />
+    <p>
+      Happy
+       is a(n) 
+      11
+       year old 
+      French Bulldog
+       
+    </p>
+    <p>
+      A sweet but stinky guy. 
+    </p>
+    <a
+      href="/"
+    >
+      back to all the Doggos
+    </a>
+  </div>
+</div>
+`;
