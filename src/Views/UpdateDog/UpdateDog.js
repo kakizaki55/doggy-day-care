@@ -25,9 +25,7 @@ export default function UpdateDog(props) {
 
   const handelSubmit = async (e) => {
     e.preventDefault();
-    console.log(dog);
-    const data = await updateDogInDataBase(dog);
-    console.log(data);
+    await updateDogInDataBase(dog);
   };
 
   return (
