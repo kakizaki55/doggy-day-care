@@ -23,14 +23,23 @@ export default function UpdateDog(props) {
     setDog({ ...dog });
   };
 
-  const handelSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     await updateDogInDataBase(dog);
+  };
+  const handleDelete = async (e) => {
+    e.preventDefault();
+    console.log('dealte button pressed');
   };
 
   return (
     <>
-      <UpdateDogFrom dog={dog} updateDog={updateDog} handelSubmit={handelSubmit} />
+      <UpdateDogFrom
+        dog={dog}
+        updateDog={updateDog}
+        handleSubmit={handleSubmit}
+        handleDelete={handleDelete}
+      />
     </>
   );
 }

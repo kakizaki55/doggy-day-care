@@ -11,14 +11,14 @@ export default function AddDog() {
     dog[key] = value;
     setDog({ ...dog });
   };
-  const handelSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     await addDogToDataBase(dog);
   };
 
   return (
     <>
-      <UpdateDogFrom dog={''} updateDog={updateDog} handelSubmit={handelSubmit} />
+      <UpdateDogFrom dog={''} updateDog={updateDog} handleSubmit={handleSubmit} />
     </>
   );
 }
