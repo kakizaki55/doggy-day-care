@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/fetchDogs';
 import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
+import { updateDogInDataBase } from '../../services/updateDog';
 
 export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
@@ -21,11 +22,12 @@ export default function UpdateDog(props) {
     dog[key] = value;
     setDog({ ...dog });
   };
-  console.log(dog);
 
-  const handelSubmit = (e) => {
+  const handelSubmit = async (e) => {
     e.preventDefault();
-    console.log('button pressed');
+    console.log(dog);
+    const data = await updateDogInDataBase(dog);
+    console.log(data);
   };
 
   return (
