@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/fetchDogs';
-import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogFrom';
+import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
 
 export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
@@ -21,10 +21,16 @@ export default function UpdateDog(props) {
     dog[key] = value;
     setDog({ ...dog });
   };
+  console.log(dog);
+
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    console.log('button pressed');
+  };
 
   return (
     <>
-      <UpdateDogFrom dog={dog} updateDog={updateDog} />
+      <UpdateDogFrom dog={dog} updateDog={updateDog} handelSubmit={handelSubmit} />
     </>
   );
 }
