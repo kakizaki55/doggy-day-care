@@ -21,7 +21,7 @@ export default function Dogdetails(props) {
   } else {
     return (
       <>
-        <DogDetailsCard {...dog[0]} />
+        <DogDetailsCard {...dog} />
       </>
     );
   }
