@@ -9,6 +9,7 @@ export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
   const [loading, setLoading] = useState(true);
   const history = useHistory();
+  const [message, setMessage] = useState();
 
   const id = props.match.params.id;
 
@@ -28,17 +29,22 @@ export default function UpdateDog(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = await updateDogInDataBase(dog);
-    history.push(`/dog/${data[0].id}`);
+    try {
+      const data = await updateDogInDataBase(dog);
+      history.push(`/dog/${data[0].id}`);
+    } catch {
+      setMessage('looks like somthing went wrong!');
+    }
   };
   const handleDelete = async (e) => {
     e.preventDefault();
-    const data = await deleteDogById(dog);
+    await deleteDogById(dog);
     history.push(`/`);
   };
 
   return (
     <>
+      <span>{message}</span>
       <UpdateDogFrom
         dog={dog}
         updateDog={updateDog}
