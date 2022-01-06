@@ -1,0 +1,10 @@
+.dog-details-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: burlywood solid 5px;
+  padding: 1rem;
+  border-radius: 50px;
+}

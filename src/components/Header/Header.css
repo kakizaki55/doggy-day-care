@@ -5,10 +5,3 @@ header {
   align-items: center;
   height: 50px;
 }
-.link {
-  margin: 50px;
-  color: blanchedalmond;
-}
-.link:active {
-  color: green;
-}
