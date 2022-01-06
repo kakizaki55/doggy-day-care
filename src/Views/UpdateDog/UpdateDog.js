@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/fetchDogs';
 import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
 import { deleteDogById, updateDogInDataBase } from '../../services/updateDog';
+import { useHistory } from 'react-router-dom';
 
 export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
   const [loading, setLoading] = useState(true);
+  const history = useHistory();
+
   const id = props.match.params.id;
 
   useEffect(() => {
@@ -25,11 +28,13 @@ export default function UpdateDog(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDogInDataBase(dog);
+    const data = await updateDogInDataBase(dog);
+    history.push(`/dog/${data[0].id}`);
   };
   const handleDelete = async (e) => {
     e.preventDefault();
-    await deleteDogById(dog);
+    const data = await deleteDogById(dog);
+    history.push(`/`);
   };
 
   return (
