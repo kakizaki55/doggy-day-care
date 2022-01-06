@@ -18,21 +18,15 @@ export default function Home() {
     fetchData();
   }, []);
 
-  if (loading) {
-    return (
-      <>
-        <div>laoding...</div>
-      </>
-    );
-  } else {
-    return (
-      <div className="dog-list">
-        {dogs.map((dog) => (
-          <Link key={dog.id} to={`dog/${dog.id}`}>
-            <HomeDogCard key={dog.id} {...dog} />
-          </Link>
-        ))}
-      </div>
-    );
-  }
+  return loading ? (
+    <div>loading...</div>
+  ) : (
+    <div className="dog-list">
+      {dogs.map((dog) => (
+        <Link key={dog.id} to={`dog/${dog.id}`}>
+          <HomeDogCard key={dog.id} {...dog} />
+        </Link>
+      ))}
+    </div>
+  );
 }

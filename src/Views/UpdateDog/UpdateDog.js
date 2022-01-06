@@ -38,8 +38,12 @@ export default function UpdateDog(props) {
   };
   const handleDelete = async (e) => {
     e.preventDefault();
-    await deleteDogById(dog);
-    history.push(`/`);
+    try {
+      await deleteDogById(dog);
+      history.push(`/`);
+    } catch {
+      setDog('oops, looks like we couldnt checkout that dog');
+    }
   };
 
   return (
