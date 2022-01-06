@@ -1,7 +1,7 @@
 import React from 'react';
 import './UpdateDogForm.css';
 
-export default function UpdateDogFrom({ dog, updateDog, handleSubmit, handleDelete }) {
+export default function UpdateDogFrom({ isUpdating, dog, updateDog, handleSubmit, handleDelete }) {
   return (
     <>
       <h1>updating dog from</h1>
@@ -57,8 +57,14 @@ export default function UpdateDogFrom({ dog, updateDog, handleSubmit, handleDele
             }}
           ></input>
         </label>
-        <button onClick={handleSubmit}>Update info</button>
-        <button onClick={handleDelete}>Delete</button>
+        {!isUpdating ? (
+          <button onClick={handleSubmit}>add Dog</button>
+        ) : (
+          <>
+            <button onClick={handleSubmit}>Update Dog</button>
+            <button onClick={handleDelete}>Delete</button>
+          </>
+        )}
       </form>
     </>
   );

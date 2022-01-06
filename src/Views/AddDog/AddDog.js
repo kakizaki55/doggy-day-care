@@ -6,7 +6,6 @@ import { addDogToDataBase } from '../../services/updateDog';
 
 export default function AddDog() {
   const [dog, setDog] = useState({});
-  const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState('');
 
   const history = useHistory();
@@ -19,7 +18,10 @@ export default function AddDog() {
     e.preventDefault();
     try {
       const data = await addDogToDataBase(dog);
-      history.push(`/dog/${data[0].id}`);
+      setMessage('doggo added succesfully!');
+      setTimeout(() => {
+        history.push(`/dog/${data[0].id}`);
+      }, 3000);
     } catch {
       setMessage('looks like somthing went wrong with adding a new dog');
     }
@@ -28,7 +30,12 @@ export default function AddDog() {
   return (
     <>
       <span>{message}</span>
-      <UpdateDogFrom dog={''} updateDog={updateDog} handleSubmit={handleSubmit} />
+      <UpdateDogFrom
+        isUpdating={false}
+        dog={''}
+        updateDog={updateDog}
+        handleSubmit={handleSubmit}
+      />
     </>
   );
 }

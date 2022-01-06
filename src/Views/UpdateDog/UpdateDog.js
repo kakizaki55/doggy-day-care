@@ -3,13 +3,14 @@ import { useEffect, useState } from 'react';
 import { fetchDogById } from '../../services/fetchDogs';
 import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
 import { deleteDogById, updateDogInDataBase } from '../../services/updateDog';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
   const [loading, setLoading] = useState(true);
   const history = useHistory();
-  const [message, setMessage] = useState();
+  const [message, setMessage] = useState('');
+  const params = useParams();
 
   const id = props.match.params.id;
 
@@ -31,7 +32,10 @@ export default function UpdateDog(props) {
     e.preventDefault();
     try {
       const data = await updateDogInDataBase(dog);
-      history.push(`/dog/${data[0].id}`);
+      setMessage('your dog was updated!');
+      setTimeout(() => {
+        history.push(`/dog/${data[0].id}`);
+      }, 3000);
     } catch {
       setMessage('looks like somthing went wrong!');
     }
@@ -40,16 +44,22 @@ export default function UpdateDog(props) {
     e.preventDefault();
     try {
       await deleteDogById(dog);
-      history.push(`/`);
+      setMessage('dog deleted succesfully');
+      setTimeout(() => {
+        history.push(`/`);
+      }, 3000);
     } catch {
-      setDog('oops, looks like we couldnt checkout that dog');
+      setMessage('oops, looks like we couldnt checkout that dog');
     }
   };
 
-  return (
+  return loading ? (
+    <>loading...</>
+  ) : (
     <>
       <span>{message}</span>
       <UpdateDogFrom
+        isUpdating={params.id}
         dog={dog}
         updateDog={updateDog}
         handleSubmit={handleSubmit}
