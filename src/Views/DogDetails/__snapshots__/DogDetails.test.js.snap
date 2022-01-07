@@ -3,32 +3,41 @@
 exports[`span shot test for the home View container 1`] = `
 <div>
   <div
-    class="dog-details-card"
+    class="dog-detail-page"
   >
-    <h1>
-       Meet 
-      Happy
-       ! 
-    </h1>
-    <img
-      src="https://placedog.net/500?id=21"
-    />
-    <p>
-      Happy
-       is a(n) 
-      11
-       year old 
-      French Bulldog
-       
-    </p>
-    <p>
-      A sweet but stinky guy. 
-    </p>
-    <a
-      href="/"
+    <div
+      class="dog-details-card"
     >
-      back to all the Doggos
-    </a>
+      <h1>
+         Meet 
+        Amely
+         ! 
+      </h1>
+      <img
+        src="https://placedog.net/500?id=12"
+      />
+      <p>
+        Amely
+         is a(n) 
+        1
+         year old 
+        Rottweiler
+         
+      </p>
+      <p>
+        Highly energetic - loves long walks and tug of war. Expect he'll grow to be a lot bigger than a teacup.
+      </p>
+      <a
+        href="/"
+      >
+        back to all the Doggos
+      </a>
+      <a
+        href="/dog/8/edit"
+      >
+        Edit Info
+      </a>
+    </div>
   </div>
 </div>
 `;

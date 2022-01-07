@@ -2,4 +2,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-image: url('../../assests/cool-background.svg');
+  background-color: rgb(228, 216, 128);
 }

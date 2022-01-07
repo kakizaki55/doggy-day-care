@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`makling sure that my update dog is working correctly 1`] = `
+<div>
+  <div
+    class="update-dog"
+  >
+    <span />
+    <h1>
+      Update Dog
+    </h1>
+    <form
+      class="update-form-container"
+    >
+      <div
+        class="update-form"
+      />
+      <label>
+        name:
+        <input
+          placeholder="name"
+          value="Amely"
+        />
+      </label>
+      <label>
+        age:
+        <input
+          placeholder="age"
+          value="1"
+        />
+      </label>
+      <label>
+        Breed:
+        <input
+          placeholder="breed"
+          value="Rottweiler"
+        />
+      </label>
+      <label>
+        bio:
+        <textarea
+          placeholder="bio"
+        >
+          Highly energetic - loves long walks and tug of war. Expect he'll grow to be a lot bigger than a teacup.
+        </textarea>
+      </label>
+      <label>
+        Image URL:
+        <input
+          placeholder="image url"
+          value="https://placedog.net/500?id=12"
+        />
+      </label>
+      <button>
+        Update Dog
+      </button>
+      <button>
+        Delete
+      </button>
+    </form>
+  </div>
+</div>
+`;

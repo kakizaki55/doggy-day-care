@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+
 import App from './App';
 
-test.skip('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('making sure the home page is loading correctly', async () => {
+  const { container } = render(
+    <MemoryRouter>
+      <App />;
+    </MemoryRouter>
+  );
+  await screen.findByText('Meet Amely !');
+  expect(container).toMatchSnapshot();
 });

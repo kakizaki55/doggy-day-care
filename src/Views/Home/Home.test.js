@@ -7,6 +7,6 @@ test('span shot test for the home View container', async () => {
       <Home />
     </MemoryRouter>
   );
-  await screen.findByText('Meet Ginny !');
+  await screen.findByText('Meet Melba !');
   expect(container).toMatchSnapshot();
 });

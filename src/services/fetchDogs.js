@@ -6,6 +6,6 @@ export async function fetchDogs() {
 }
 
 export async function fetchDogById(id) {
-  const response = await client.from('dogs').select('*').match({ id: id });
+  const response = await client.from('dogs').select('*').match({ id: id }).single();
   return checkError(response);
 }

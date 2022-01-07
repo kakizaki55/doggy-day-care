@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchDogById } from '../../services/fetchDogs';
 import DogDetailsCard from '../../components/DogDetailsCard/DogDetailsCard';
+import './DogDetails.css';
 
 export default function Dogdetails(props) {
   const [dog, setdog] = useState({});
@@ -20,9 +21,9 @@ export default function Dogdetails(props) {
     return <div>loading...</div>;
   } else {
     return (
-      <>
-        <DogDetailsCard {...dog[0]} />
-      </>
+      <div className="dog-detail-page">
+        <DogDetailsCard {...dog} />
+      </div>
     );
   }
 }

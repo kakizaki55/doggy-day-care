@@ -1,7 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`span shot test for the home View container 1`] = `
+exports[`making sure the home page is loading correctly 1`] = `
 <div>
+  <header>
+    <a
+      aria-current="page"
+      class="link active"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/admin"
+    >
+      Admin
+    </a>
+  </header>
   <div
     class="dog-list"
   >
@@ -270,5 +285,6 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
   </div>
+  ;
 </div>
 `;
