@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
 import { addDogToDataBase } from '../../services/updateDog';
+import './AddDog.css';
 
 export default function AddDog() {
   const [dog, setDog] = useState({});
@@ -28,7 +29,7 @@ export default function AddDog() {
   };
 
   return (
-    <>
+    <div className="update-dog-page">
       <span>{message}</span>
       <UpdateDogFrom
         isUpdating={false}
@@ -36,6 +37,6 @@ export default function AddDog() {
         updateDog={updateDog}
         handleSubmit={handleSubmit}
       />
-    </>
+    </div>
   );
 }

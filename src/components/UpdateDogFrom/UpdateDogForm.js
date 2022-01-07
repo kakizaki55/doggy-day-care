@@ -4,7 +4,7 @@ import './UpdateDogForm.css';
 export default function UpdateDogFrom({ isUpdating, dog, updateDog, handleSubmit, handleDelete }) {
   return (
     <>
-      <h1>updating dog from</h1>
+      {!isUpdating ? <h1>Add New Dog</h1> : <h1>Update Dog</h1>}
       <form className="update-form-container">
         <div className="update-form"></div>
         <label>

@@ -4,6 +4,7 @@ import { fetchDogById } from '../../services/fetchDogs';
 import UpdateDogFrom from '../../components/UpdateDogFrom/UpdateDogForm';
 import { deleteDogById, updateDogInDataBase } from '../../services/updateDog';
 import { useHistory, useParams } from 'react-router-dom';
+import './UpdateDog.css';
 
 export default function UpdateDog(props) {
   const [dog, setDog] = useState({});
@@ -56,7 +57,7 @@ export default function UpdateDog(props) {
   return loading ? (
     <>loading...</>
   ) : (
-    <>
+    <div className="update-dog">
       <span>{message}</span>
       <UpdateDogFrom
         isUpdating={params.id}
@@ -65,6 +66,6 @@ export default function UpdateDog(props) {
         handleSubmit={handleSubmit}
         handleDelete={handleDelete}
       />
-    </>
+    </div>
   );
 }

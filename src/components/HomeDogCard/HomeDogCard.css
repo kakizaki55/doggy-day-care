@@ -11,6 +11,8 @@ img {
   margin: 1rem;
   border: burlywood solid 5px;
   padding: 1rem;
-  width: 500px;
+  width: 200px;
+  height: 300px;
   border-radius: 50px;
+  background-color: rgba(62, 205, 131, 0.673);
 }
