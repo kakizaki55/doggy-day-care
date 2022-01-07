@@ -13,150 +13,6 @@ exports[`span shot test for the home View container 1`] = `
       >
         <h1>
            Meet 
-          Ron
-           ! 
-        </h1>
-        <img
-          src="https://images.pexels.com/photos/6246667/pexels-photo-6246667.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-        />
-        <p>
-          Ron
-           is a(n) 
-          0
-           year old 
-          Golden Retriever
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/10"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Barton
-           ! 
-        </h1>
-        <img
-          src="https://placedog.net/500?id=6"
-        />
-        <p>
-          Barton
-           is a(n) 
-          1
-           year old 
-          Weimaraner
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/21"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Olive
-           ! 
-        </h1>
-        <img
-          src=""
-        />
-        <p>
-          Olive
-           is a(n) 
-          6
-           year old 
-          Shepard Mix
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/11"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Happy
-           ! 
-        </h1>
-        <img
-          src="https://placedog.net/500?id=21"
-        />
-        <p>
-          Happy
-           is a(n) 
-          11
-           year old 
-          French Bulldog
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/14"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Eyes
-           ! 
-        </h1>
-        <img
-          src="https://placedog.net/500?id=22"
-        />
-        <p>
-          Eyes
-           is a(n) 
-          4
-           year old 
-          Weimaraner Mix
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/15"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Pugilicious
-           ! 
-        </h1>
-        <img
-          src="https://placedog.net/500?id=26"
-        />
-        <p>
-          Pugilicious
-           is a(n) 
-          12
-           year old 
-          Pug
-           
-        </p>
-      </div>
-    </a>
-    <a
-      href="/dog/5"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
           Melba
            ! 
         </h1>
@@ -174,7 +30,7 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/9"
+      href="/dog/7"
     >
       <div
         class="dog-card"
@@ -198,7 +54,7 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/2"
+      href="/dog/8"
     >
       <div
         class="dog-card"
@@ -222,7 +78,7 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/3"
+      href="/dog/9"
     >
       <div
         class="dog-card"
@@ -246,7 +102,7 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/4"
+      href="/dog/10"
     >
       <div
         class="dog-card"
@@ -270,23 +126,47 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/16"
+      href="/dog/4"
     >
       <div
         class="dog-card"
       >
         <h1>
            Meet 
-          Ginny
+          Eyes days
            ! 
         </h1>
         <img
-          src="https://images.pexels.com/photos/5886866/pexels-photo-5886866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          src="https://placedog.net/500?id=22"
         />
         <p>
-          Ginny
+          Eyes days
            is a(n) 
-          0
+          5
+           year old 
+          Weimaraner Mix
+           
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dog/3"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+           Meet 
+          Ronny Ron
+           ! 
+        </h1>
+        <img
+          src="https://images.pexels.com/photos/6246667/pexels-photo-6246667.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        />
+        <p>
+          Ronny Ron
+           is a(n) 
+          1
            year old 
           Golden Retriever
            
@@ -294,49 +174,97 @@ exports[`span shot test for the home View container 1`] = `
       </div>
     </a>
     <a
-      href="/dog/8"
+      href="/dog/5"
     >
       <div
         class="dog-card"
       >
         <h1>
            Meet 
-          Eileen
+          Pugilicious
            ! 
         </h1>
         <img
-          src="https://placedog.net/500?id=4"
+          src="https://placedog.net/500?id=26"
         />
         <p>
-          Eileen
+          Pugilicious
            is a(n) 
-          2
+          11
            year old 
-          American Boxer
+          Pug
            
         </p>
       </div>
     </a>
     <a
-      href="/dog/17"
+      href="/dog/11"
     >
       <div
         class="dog-card"
       >
         <h1>
            Meet 
-          Mrs. Weasley
+          PIXIEL
            ! 
         </h1>
         <img
-          src="https://placedog.net/1000/563?id=3"
+          src="https://images.cdn1.stockunlimited.net/preview1300/pixel-dog_2021383.jpg"
         />
         <p>
-          Mrs. Weasley
+          PIXIEL
+           is a(n) 
+          22
+           year old 
+          german byter 
+           
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dog/1"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+           Meet 
+          Barton the third
+           ! 
+        </h1>
+        <img
+          src="https://placedog.net/500?id=6"
+        />
+        <p>
+          Barton the third
            is a(n) 
           3
            year old 
-          Golden Retriever
+          Weimaraner
+           
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dog/2"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+           Meet 
+          Happy
+           ! 
+        </h1>
+        <img
+          src="https://placedog.net/500?id=21"
+        />
+        <p>
+          Happy
+           is a(n) 
+          11
+           year old 
+          French Bulldog
            
         </p>
       </div>

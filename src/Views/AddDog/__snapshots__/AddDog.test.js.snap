@@ -1,78 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`making sure the dog deatils card is reding correctly 1`] = `
+exports[`making sure the add dog component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="dog-details-card"
+        class="update-dog-page"
       >
+        <span />
         <h1>
-           Meet 
-          tommy
-           ! 
+          Add New Dog
         </h1>
-        <img
-          src="https://placedog.net/500?id=6"
-        />
-        <p>
-          tommy
-           is a(n) 
-          3
-           year old 
-          husky
-           
-        </p>
-        <p>
-          loves evveryone
-        </p>
-        <a
-          href="/"
+        <form
+          class="update-form-container"
         >
-          back to all the Doggos
-        </a>
-        <a
-          href="/dog/undefined/edit"
-        >
-          Edit Info
-        </a>
+          <div
+            class="update-form"
+          />
+          <label>
+            name:
+            <input
+              placeholder="name"
+              value=""
+            />
+          </label>
+          <label>
+            age:
+            <input
+              placeholder="age"
+              value=""
+            />
+          </label>
+          <label>
+            Breed:
+            <input
+              placeholder="breed"
+              value=""
+            />
+          </label>
+          <label>
+            bio:
+            <textarea
+              placeholder="bio"
+            />
+          </label>
+          <label>
+            Image URL:
+            <input
+              placeholder="image url"
+              value=""
+            />
+          </label>
+          <button>
+            add Dog
+          </button>
+        </form>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="dog-details-card"
+      class="update-dog-page"
     >
+      <span />
       <h1>
-         Meet 
-        tommy
-         ! 
+        Add New Dog
       </h1>
-      <img
-        src="https://placedog.net/500?id=6"
-      />
-      <p>
-        tommy
-         is a(n) 
-        3
-         year old 
-        husky
-         
-      </p>
-      <p>
-        loves evveryone
-      </p>
-      <a
-        href="/"
+      <form
+        class="update-form-container"
       >
-        back to all the Doggos
-      </a>
-      <a
-        href="/dog/undefined/edit"
-      >
-        Edit Info
-      </a>
+        <div
+          class="update-form"
+        />
+        <label>
+          name:
+          <input
+            placeholder="name"
+            value=""
+          />
+        </label>
+        <label>
+          age:
+          <input
+            placeholder="age"
+            value=""
+          />
+        </label>
+        <label>
+          Breed:
+          <input
+            placeholder="breed"
+            value=""
+          />
+        </label>
+        <label>
+          bio:
+          <textarea
+            placeholder="bio"
+          />
+        </label>
+        <label>
+          Image URL:
+          <input
+            placeholder="image url"
+            value=""
+          />
+        </label>
+        <button>
+          add Dog
+        </button>
+      </form>
     </div>
   </div>,
   "debug": [Function],
