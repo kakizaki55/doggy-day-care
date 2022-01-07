@@ -26,7 +26,7 @@ exports[`makling sure that my update dog is working correctly 1`] = `
         age:
         <input
           placeholder="age"
-          value="0"
+          value="1"
         />
       </label>
       <label>

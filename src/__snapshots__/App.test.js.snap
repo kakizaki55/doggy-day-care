@@ -69,30 +69,6 @@ exports[`making sure the home page is loading correctly 1`] = `
       </div>
     </a>
     <a
-      href="/dog/8"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-           Meet 
-          Amely
-           ! 
-        </h1>
-        <img
-          src="https://placedog.net/500?id=12"
-        />
-        <p>
-          Amely
-           is a(n) 
-          0
-           year old 
-          Rottweiler
-           
-        </p>
-      </div>
-    </a>
-    <a
       href="/dog/9"
     >
       <div
@@ -232,6 +208,30 @@ exports[`making sure the home page is loading correctly 1`] = `
           22
            year old 
           german byter 
+           
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dog/8"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+           Meet 
+          Amely
+           ! 
+        </h1>
+        <img
+          src="https://placedog.net/500?id=12"
+        />
+        <p>
+          Amely
+           is a(n) 
+          1
+           year old 
+          Rottweiler
            
         </p>
       </div>
